@@ -7,10 +7,8 @@
 
   margin: 12px;
 
-  background: #FFFFFF;
   border: 1px solid black;
 
-  color: #000000;
 } /* List item's default properties */
 
 .post-highlight {
@@ -29,15 +27,9 @@
   right: 15%;
   border: 3px solid pink;
   padding: 10px;
+  background: #42f4df;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
 } /* div for the exploded content */
-
-.show {
-
-} /* dummy class */
-
-.darken {
-  opacity: .5;
-} /* darkens the background */
 
 img.post-thumbnail {
   float: left;
@@ -45,4 +37,6 @@ img.post-thumbnail {
 
 img.blown-up-img {
   float: left;
+  max-width: 75%;
+  max-height: 75%;
 } /* blown up img */

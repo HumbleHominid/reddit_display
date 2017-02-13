@@ -1,8 +1,9 @@
-{{#if details.data.is_self}}
-  <b>Content is a self post</b><br>
-{{else}}
-  <img class=post-thumbnail src={{details.data.url}}/>
-{{/if}}
+{{post-details title=details.data.title author=details.data.author subreddit=details.data.subreddit}}
 
-<b>Title: </b>{{details.data.title}}<br>
-<b>Subreddit: </b>{{details.data.subreddit}}<br>
+{{#unless details.data.is_self}}
+  <img class=blown-up-img src={{details.data.url}}/>
+{{else unless details.data.selftext_html}}
+  <b>Content: </b> No further content.<br>
+{{else}}
+  <b>Content:</b> {{details.data.selftext}}<br>
+{{/unless}}
