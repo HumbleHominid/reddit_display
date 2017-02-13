@@ -9,7 +9,6 @@ export default Ember.Component.extend({
     postBlowUp(data) {
       this.set('doPostBlowUp', !this.get('doPostBlowUp'));
       this.set('postBlowUpData', data);
-      this.sendAction();
     }
   }
 });
