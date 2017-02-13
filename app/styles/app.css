@@ -1,0 +1,23 @@
+.post, .post-highlight {
+  display: block;
+
+  max-height: 400px;
+  width: 500px;
+  overflow-x: hidden;
+
+  margin: 12px;
+
+  background: #FFFFFF;
+
+  color: #000000;
+} /* List item's default properties */
+
+.post-highlight {
+  background: #1E90FF;
+
+  color: #FFFFFF;
+} /* highlighted image properties */
+
+img.post-thumbnail {
+  float: left;
+} /* thumbnail image properties */
