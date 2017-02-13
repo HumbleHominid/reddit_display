@@ -1,3 +1,7 @@
 {{#each postList as |post index|}}
-  {{reddit-post details=post}}
+  {{reddit-post action=(action 'postBlowUp' post) details=post}}
 {{/each}}
+
+{{#if doPostBlowUp}}
+  {{post-blow-up details=postBlowUpData}}
+{{/if}}

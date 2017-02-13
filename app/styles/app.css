@@ -8,6 +8,7 @@
   margin: 12px;
 
   background: #FFFFFF;
+  border: 1px solid black;
 
   color: #000000;
 } /* List item's default properties */
@@ -18,6 +19,30 @@
   color: #FFFFFF;
 } /* highlighted image properties */
 
+.post-blow-up {
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  width: 70%;
+  top: 0%;
+  left: 15%;
+  right: 15%;
+  border: 3px solid pink;
+  padding: 10px;
+} /* div for the exploded content */
+
+.show {
+
+} /* dummy class */
+
+.darken {
+  opacity: .5;
+} /* darkens the background */
+
 img.post-thumbnail {
   float: left;
 } /* thumbnail image properties */
+
+img.blown-up-img {
+  float: left;
+} /* blown up img */

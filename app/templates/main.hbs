@@ -1,1 +1,3 @@
-{{reddit-post-list postList=model.data.children}}
+<div class={{if doDarkenContent 'darken' 'show'}}>
+  {{reddit-post-list action="darkenContent" postList=model.data.children}}
+</div>

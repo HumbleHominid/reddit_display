@@ -1,17 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNameBindings: ['highlight:post-highlight:post'],
+  classNameBindings: ['doHighlight:post-highlight:post'],
 
-  highlight: false,
+  doHighlight: false,
 
   mouseEnter() {
-    this.set('highlight', !this.get('highlight'));
+    this.set('doHighlight', !this.get('doHighlight'));
   },
   mouseLeave() {
-    this.set('highlight', !this.get('highlight'));
+    this.set('doHighlight', !this.get('doHighlight'));
   },
   click() {
-    this.get('action');
+    this.sendAction();
   }
 });
