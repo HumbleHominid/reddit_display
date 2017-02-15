@@ -1,6 +1,13 @@
-{{#each postList as |post index|}}
+{{! for each item in #########, take the item as post }}
+
+{{#each postList as post}}
+
+  {{! Creates a ####### component with the action ####### and passes the deatils of the post to it }}
+
   {{reddit-post action=(action 'postBlowUp' post) details=post}}
 {{/each}}
+
+{{! if ####### is true in #####.js, the post is blown up on the screen }}
 
 {{#if doPostBlowUp}}
   {{post-blow-up details=postBlowUpData}}
