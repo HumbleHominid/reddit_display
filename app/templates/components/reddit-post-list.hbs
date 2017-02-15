@@ -1,6 +1,6 @@
-{{! for each item in #########, take the item as post }}
+{{! for each item in #########, take the item as post with their index }}
 
-{{#each postList as post}}
+{{#each postList as |post indx|}}
 
   {{! Creates a ####### component with the action ####### and passes the deatils of the post to it }}
 
