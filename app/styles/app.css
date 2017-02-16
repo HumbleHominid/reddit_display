@@ -1,42 +1,63 @@
-.post, .post-highlight {
+body {
+  font-family: sans-serif;
+} /* make all fonts inside body sans-serif because I hate serifs */
+
+.post-list-element, .post-list-element-highlight {
   display: block;
 
   max-height: 400px;
-  width: 500px;
-  overflow-x: hidden;
+  width: 80%;
+  overflow: hidden;
 
   margin: 12px;
 
-  border: 1px solid black;
+  background: #eee;
 
-} /* List item's default properties */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+} /* post list element's default properties */
 
-.post-highlight {
+.post-list-element-highlight {
   background: #1E90FF;
+  color: #fff;
+} /* post list element when it is highlighted */
 
-  color: #FFFFFF;
-} /* highlighted image properties */
-
-.post-blow-up {
-  margin: auto;
+.post-overlay {
   position: fixed;
+
+  overflow-y: scroll;
+
   z-index: 1;
-  width: 70%;
-  top: 0%;
+  top: 5%;
   left: 15%;
   right: 15%;
-  border: 3px solid pink;
-  padding: 10px;
-  background: #42f4df;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
-} /* div for the exploded content */
+
+  background: #fff;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.5);
+} /* post overlay-component class */
 
 img.post-thumbnail {
   float: left;
-} /* thumbnail image properties */
+} /* thumbnail used in post list element */
 
-img.blown-up-img {
-  float: left;
+img.post-image {
+  position: relative;
+  top: 0%;
+  left: 0%;
   max-width: 75%;
   max-height: 75%;
-} /* blown up img */
+} /* image used in post overlay */
+
+.post-list-element-contents {
+  display: block;
+  margin: 8px 8px 8px 8px;
+} /* main contents of post list element*/
+
+.post-overlay-contents {
+  display: block;
+  margin: 24px;
+} /* main contents of post overlay */
+
+.post-details {
+  display: block;
+  margin: 8px 8px 8px 8px;
+} /* post details (author, title, sub) */

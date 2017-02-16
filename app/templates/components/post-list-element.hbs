@@ -1,0 +1,11 @@
+{{! Creates post-details component and passes title, author, and subreddit details to it }}
+{{post-details title=postData.data.title author=postData.data.author subreddit=postData.data.subreddit}}
+
+{{! if the post is a self post, display a self post message, otherwise display the image }}
+<div class='post-list-element-contents'>
+  {{#if postData.data.is_self}}
+    <i>Content is a self post</i><br>
+  {{else}}
+    <img class=post-thumbnail src={{postData.data.thumbnail}}/>
+  {{/if}}
+</div>

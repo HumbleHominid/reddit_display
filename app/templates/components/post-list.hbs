@@ -1,0 +1,12 @@
+{{! For each item in postList take the item as post with their index }}
+
+{{#each postList as |post|}}
+  {{! Creates a post-list-element component with postData and action onSelectAction}}
+  {{post-list-element postData=post selectCallback=(action 'elementSelected')}}
+{{/each}}
+
+{{! if postOverlayData is non-null, the post is shown in an overlay }}
+{{#if postOverlayData}}
+  {{! Create overlay with postData and close callback }}
+  {{post-overlay postData=postOverlayData closeCallback=(action 'closePostOverlay')}}
+{{/if}}
