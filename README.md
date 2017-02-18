@@ -1,3 +1,19 @@
+# Installation
+1. Install git from [here](https://desktop.github.com/) (Using command line is recommended)
+2. Install node.js from [here](https://nodejs.org/en/download/)
+3. Install ember.
+  * Open a terminal window
+  * type `npm install --save -g ember-cli`
+4. Clone a repository from git `git clone https://github.com/HumbleHominid/reddit_display`
+5. Go into the downloaded directory
+6. Type `npm install; bower install` to download dependencies
+7. Type `emebr s` to run the ember server
+8. Go to `https://localhost:4200` on any web browser
+
+
+## Files
+The javascript for component files are located in `$/app/components`. The handlebars for components files are located in `$/app/templates/components`
+
 # reddit-display
 
 This README outlines the details of collaborating on this Ember application.
@@ -11,7 +27,6 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Bower](https://bower.io/)
 * [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
