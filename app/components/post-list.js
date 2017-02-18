@@ -6,12 +6,6 @@ export default Ember.Component.extend({
   postOverlayData: null,
 
   actions: {
-    // Sets postOverlayData to be non-null
-    // post-list.hbs sees this and shows the post overlay
-    showPostOverlay(postData) {
-      this.set('postOverlayData', postData);
-    },
-
     // Sets postOverlayData to null, closing the overlay
     closePostOverlay() {
       this.set('postOverlayData', null);

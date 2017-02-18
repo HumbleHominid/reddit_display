@@ -5,12 +5,12 @@
 {{post-details title=postData.data.title author=postData.data.author subreddit=postData.data.subreddit}}
 
 <div class='post-overlay-contents'>
-  {{#unless postData.data.is_self}}
+  {{#if postData.data.is_self}}
+    {{! if post is a self post, show self post text }}
+    {{postData.data.selftext}}
+  {{else}}
     {{! displays and image unless the post is a self post }}
     <a href={{postData.data.url}}>(source)</a><br>
     <img class='post-image' src={{postData.data.url}}/>
-  {{else}}
-    {{! if post is a self post, show self post text }}
-    {{postData.data.selftext}}
-  {{/unless}}
+  {{/if}}
 </div>
