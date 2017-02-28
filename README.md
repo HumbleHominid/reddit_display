@@ -7,7 +7,7 @@
 4. Clone a repository from git `git clone https://github.com/HumbleHominid/reddit_display`
 5. Go into the downloaded directory
 6. Type `npm install; bower install` to download dependencies
-  * If there is an error about not finding bower, run `npm install --save -g bower` and it should fix it
+  * If there is an error about not finding bower, run `npm install --save -g bower` and re-run 6
 7. Type `emebr s` to run the ember server
 8. Go to `https://localhost:4200` on any web browser
 
